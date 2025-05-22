@@ -1,0 +1,78 @@
+/* Import Google font - Poppins */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper .carousel{
+    font-size: 0px;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.carousel img{
+    height: 340px;
+    object-fit: cover;
+    margin-left: 14px;
+    width: calc(100% / 3);
+}
+
+.carousel img:first-child{
+    margin-left: 0px;
+    }
+
+
+body{
+    display: flex;
+    padding: 0 35px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #96bbf3;
+}
+
+.wrapper{
+    max-width: 1200px;
+    position: relative;
+}
+
+.wrapper i{
+    top: 50%;
+    background: #fff;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 46px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    font-size: 1.2rem;
+    transform: translateY(-50%);
+}
+
+.wrapper i:first-child{
+    left: -23px;
+}
+
+.wrapper i:last-child{
+    right: -23px;
+}
+
+@media screen and (max-width: 900px){
+    .carousel img{
+        width: calc(100% / 2);
+    }
+}
+
+@media screen and (max-width: 550px){
+    .carousel img{
+        width: 100%;
+    }
+}
